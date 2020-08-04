@@ -46,6 +46,8 @@ function SinglePost(props) {
   let postMarkup;
   if (loading) {
     postMarkup = <p>Loading post..</p>;
+  } else if (error) {
+    postMarkup = <p>Loading post..</p>;
   } else {
     const {
       id,
